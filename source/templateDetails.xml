@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.5" type="template" client="site">
+    <name>mytemplate</name>
+	<creationDate>1 May 2016</creationDate>
+	<author>D.S.Butskih</author>
+	<authorEmail>butsds@yandex.ru</authorEmail>
+	<authorUrl>http://www.site.ru</authorUrl>
+	<copyright>Copyright (C) 2016. All rights reserved.</copyright>
+	<description>TPL_MYTEMPLATE_XML_DESCRIPTION</description>
+    <license>GNU/GPL</license>
+	<version>1.1.0</version>
+	
+    
+    <files>
+        <folder>css</folder>
+        <folder>sass</folder>
+        <folder>js</folder>
+        <folder>img</folder>
+        <folder>language</folder>
+        <folder>html</folder>
+        
+        <filename>index.php</filename>
+        <filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+        <filename>favicon.ico</filename>
+        
+    </files>
+    
+    <positions>
+        <position>position-0</position>
+        <position>position-1</position>
+        <position>position-2</position>
+    </positions>
+    
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.tpl_mytemplate.ini</language>
+        <language tag="en-GB">en-GB/en-GB.tpl_mytemplate.sys.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.tpl_mytemplate.ini</language>
+        <language tag="ru-RU">ru-RU/ru-RU.tpl_mytemplate.sys.ini</language>
+    </languages>
+    
+    <config>
+        <fields name="params">
+            <fieldset name="advanced">
+                <field name="testColor" class="" type="color" default="#08C"
+					label="TPL_MYTEMPLATE_COLOR_LABEL"
+					description="TPL_MYTEMPLATE_COLOR_DESC" />
+                <field name="mediaFile" class="" type="media" default=""
+					label="TPL_MYTEMPLATE_MEDIA_LABEL"
+					description="TPL_MYTEMPLATE_MEDIA_DESC" />
+                <field name="testText"  type="text" default=""
+					label="TPL_MYTEMPLATE_TEST_TEXT"
+					description="TPL_MYTEMPLATE_TEST_TEXT_DESC"
+					filter="string" />
+                <field name="testList" type="list" default="center"
+					label="TPL_MYTEMPLATE_TEST_LIST"
+					description="TPL_MYTEMPLATE_TEST_LIST_DESC"
+					filter="word"
+				>
+					<option value="center">TPL_MYTEMPLATE_TEST_LIST_VALUE1</option>
+					<option value="left">TPL_MYTEMPLATE_TEST_LIST_VALUE2</option>
+				</field>
+                <field name="testRadio"
+					type="radio"
+					class=""
+					default="1"
+					label="TPL_MYTEMPLATE_TEST_RADIO"
+					description="TPL_MYTEMPLATE_TEST_RADIO_DESC"
+				>
+					<option value="1">YES</option>
+					<option value="0">NO</option>
+				</field>
+            </fieldset>
+        </fields>
+    </config>
+    
+</extension>
